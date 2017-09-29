@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- list template -->
+    {{ partial "header" . }}
+
+    <h2>{{ with .Site.GetPage "section" "articles"}} {{.Title}} {{end}}</h2>
+    <ul>
+    {{ partial "menu" .}}
+  </ul>
+  </body>
+</html>
